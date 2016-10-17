@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Map</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link href="assets/css/lightbox.css" rel="stylesheet">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        
+        	<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+            <script src="assets/js/lightbox-plus-jquery.js"></script>
+           <script type="text/javascript" src="assets/js/spn.js"></script>
+<link rel="prev" title="Page 2" href="players.html" />
+         <link rel="next" title="Page 1" href="gallery.html" />
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">Dublin 1916</span>
+                                    
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						
+						<ul>
+							<li><a href="index.html">Home</a></li>
+                            <li><a href="players.html">The Players</a></li>
+                             <li><a href="map.html">Map</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                           <li><a href="historians.html">The Historians</a></li>
+							<li><a href="about.html">About</a></li>
+							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				
+                            
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1TE8G5MGCJ3kh4VjdsuwIC-pPFhU" width="100%" height="550"></iframe>
+							<!--<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+							 
+  
+    <script type="text/javascript">
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 53.345703137662724, lng: -6.270106397436507},
+    zoom: 14
+  });
+  
+  southdublinunionString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">South Dublin Union</h1>'+
+      '<div id="bodyContent">'+
+      '<p>The South Dublin Union, in which Eamonn Ceannt was the commandant, is now St James&acute; Hospital. '+
+	  'Two miles west of the GPO, some 120 Volunteers made up the 4th Battalion here. '+
+	  'The Union was built as a workhouse in the middle of the 19th century. In 1916 it housed about 3,200 of the '+
+	  'poor and elderly, as well as a doctors and nurses.The Union &#8211; consisting of living quarters, an infirmary, '+
+	  '<IMG BORDER="1" ALIGN="right" SRC="img/union.png">'+
+	  'a hospital and churches on 50 acres &#8211; was in a strategic position as it overlooked Kingsbridge (Heuston) '+
+	  'railway station to the north and controlled the route from Richmond Barracks and the Royal Hospital (military headquarters) '+
+	  'leading to the city centre. From here, Ceantt deployed his men: Captain Seamus Murphy to Jameson&acute;s Distillery in Marrowbone '+
+	  'Lane to the south east; Con Colbert to Watkins&acute; brewery in Ardee Street to the east; and Captain Thomas McCarthy to Roe&acute;s Distillery in Mount Brown. '+
+	  
+'The Union saw intense fighting early in the week, but held out despite heavy casualties on both sides. News of the surrender did not reach Ceannt until Sunday.</p>'+
+      
+      '</div>'+
+      '</div>';
+
+  infowindow1 = new google.maps.InfoWindow({
+    content: southdublinunionString
+  });
+  
+  southdublinunionMarker = new google.maps.Marker({
+    position: {lat: 53.3404222, lng: -6.294856399999958},
+    map: map,
+    title: 'South Dublin Union'
+  });
+  southdublinunionMarker.addListener('click', function() {
+	  infowindow1.open(map, southdublinunionMarker);
+  });
+  
+  
+  gpoString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">The General Post Office (G.P.O.)</h1>'+
+      '<div id="bodyContent">'+
+      '<p>Easter Monday, 1916<br>'+
+'Inside the Post Office, a reduced staff was on duty keeping essential services open for the public. '+
+'Just after mid-day, a contingent of men who had assembled at Liberty Hall, a short distance away, '+
+'<IMG BORDER="1" ALIGN="right" SRC="img/gpo.png">'+
+'entered the building and ordered staff and customers to leave. Upstairs, a number of Post Office '+
+'telegraph staff and some unarmed soldiers barricaded the doors and refused to leave until shots '+
+
+'were fired at them. The rebels, led by Patrick Pearse and James Connolly, were motivated by various '+
+'ideals but held the common belief that only an armed revolt could bring about the independence of '+
+'Ireland from the rest of the United Kingdom. They chose the GPO, the communications heart of the '+
+'country and the centre of Dublin city, as the building on which to hoist the flag of an Irish republic.</p>'+
+      
+      '</div>'+
+      '</div>';
+
+  infowindow2 = new google.maps.InfoWindow({
+    content: gpoString
+  });
+  
+  gpoMarker = new google.maps.Marker({
+    position: {lat: 53.34928600000001, lng: -6.26114819999998},
+    map: map,
+    title: 'The General Post Office (G.P.O.)'
+  });
+  gpoMarker.addListener('click', function() {
+	  infowindow2.open(map, gpoMarker);
+  });
+
+}
+
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSV857IT7st5dUP99UfTww9awpDLv_08o&callback=initMap">
+    </script>
+						
+
+				<!-- Footer -->
+					<!--<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="field half first">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="special" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>-->
+
+			</div>
+
+	
+
+	</body>
+</html>
