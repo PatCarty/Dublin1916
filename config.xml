@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget id="com.dublin1916test" version="0.0.1" xmlns="http://www.w3.org/ns/widgets">
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.example"
+    versionCode = "10"
+    version     = "1.0.0" >
        <name>Dublin 1916</name>
        <description>MSc final project</description> 
-        <!-- plugins -->
-        <content src="index.html" />
+       
 
 
 
@@ -16,9 +18,7 @@
  <!-- access -->
  
  <access origin="https://www.google.com/maps/" subdomains="true" />
- <allow-navigation href="https://www.google.com/maps/" />
- <allow-intent href="https://www.google.com/maps/ />
- <!--icon-->
+
  <icon src="images/logo.png" />
  
 
