@@ -16,7 +16,7 @@
  <preference name="fullscreen"                 value="true" /> 
  
  <!-- access -->
- 
+ <access origin="*"></access>
  <access origin="https://www.google.com/maps/" subdomains="true" />
 
  <icon src="images/logo.png" />
