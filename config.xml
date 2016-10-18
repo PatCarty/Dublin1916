@@ -4,7 +4,7 @@
        <name>Dublin 1916</name>
        <description>MSc final project</description> 
         <!-- plugins -->
-        <content src="index.html"></content>
+        <content src="index.html" />
 
 
 
