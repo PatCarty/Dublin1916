@@ -8,7 +8,7 @@
         <!-- plugins -->
         
 <plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
-<plugin name="com.jp.whitelistplugin" spec="1.1.2" source="pgb" />
+
 
 <!-- preferences -->
 
@@ -18,5 +18,15 @@
  <!-- access -->
  
  <access origin="https://www.google.com/maps/" subdomains="true" />
+ 
+ <!--icon-->
+ <icon src="images/logo.png" />
+ 
+ <!--splash-->
+  <gap:splash src="images/logogreen.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="images/logogreen.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="images/logogreen.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="images/logogreen.png"           gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="images/logogreen.png"          gap:platform="ios"     width="1024" height="768" />
  
  </widget>
